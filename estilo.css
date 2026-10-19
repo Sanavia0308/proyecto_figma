@@ -149,6 +149,11 @@ body.pagina-scroll .navegacioninferior a:first-child {
     color: #2c4295;
 }
 
+body.pagina-scroll .navegacioninferior a:first-child:hover {
+    background-color: #fce300;
+    color: black;
+}
+
 body.pagina-scroll .navegacioninferior a:nth-child(3) {
     background-color: #fce300;
     color: black;
