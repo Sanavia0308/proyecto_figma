@@ -139,22 +139,7 @@ h1 {
     font-size: 18px;
 }
 
-.navegacioninferior a:first-child {
-    background-color: #fce300;
-    color: black;
-}
-
-body.pagina-scroll .navegacioninferior a:first-child {
-    background-color: white;
-    color: #2c4295;
-}
-
-body.pagina-scroll .navegacioninferior a:first-child:hover {
-    background-color: #fce300;
-    color: black;
-}
-
-body.pagina-scroll .navegacioninferior a:nth-child(3) {
+.navegacioninferior a.pagina-actual {
     background-color: #fce300;
     color: black;
 }
@@ -231,7 +216,7 @@ body.pagina-scroll footer {
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
 }
 
-@media (max-width: 800px) {
+@media (max-width: 989px) {
     .bloque-alterno {
         flex-direction: column;
     }
@@ -303,6 +288,7 @@ body.pagina-scroll footer {
   }
 }
 
+
 /*Esto ya sería tamaño tablets*/
 @media (max-width: 1024px) {
   .tarjeta, .tarjeta2 {
@@ -323,3 +309,83 @@ body.pagina-scroll footer {
     margin-bottom: 20px;
   }
 }
+
+/*TERCERA PÁGINA*/
+
+
+.asignaturas-container {
+    display: flex;
+    flex-wrap: wrap;             
+    justify-content: center;     
+    gap: 30px;                   
+    max-width: 1100px;           
+    margin: 40px auto;          
+    padding: 0 20px;
+}
+
+
+.tarjeta {
+    background-color: white;
+    color: #000;
+    border: 2px solid #000;
+    padding: 25px;
+    width: calc(50% - 15px);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.tarjeta h2 {
+    font-size: 1.3rem;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.tarjeta p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    flex-grow: 1;              
+    margin-bottom: 25px;
+}
+
+
+.svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.svg img {
+    height: 40px;                
+    width: auto;
+}
+
+.bloque-alterno img{
+    width: 60%;
+    height: auto;
+}
+
+
+@media (max-width: 768px) {
+    .tarjeta {
+        width: 100%;           
+    }
+    
+}
+@media (max-width: 987px) {
+    .tarjeta {
+        width: 100%;           
+    }
+}
+
+@media (max-width: 989px) {
+    .bloque-alterno img {
+         width:80%;
+    }
+    
+}
+
